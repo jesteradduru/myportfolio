@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-purple {
+  color: #7538f1 !important;
+}
+
+.nav-link{
+    color: #7538f1 !important;
+}
