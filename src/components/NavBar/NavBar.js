@@ -23,7 +23,7 @@ const NavBar = (props) => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ms-auto" navbar>
+          <Nav className="ms-auto lead" navbar>
             <NavItem>
               <NavLink href="#">About</NavLink>
             </NavItem>
