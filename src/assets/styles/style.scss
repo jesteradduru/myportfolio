@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+$primaryColor: #7538f1;
+
+@mixin fullScreen() {
+  height:100vh;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-bold{
+  font-weight: 700;
+}
+
+.text-semibold{
+  font-weight: 600;
+}
+
+.text-purple {
+  color: $primaryColor !important;
+}
+
+.nav-link{
+    color: $primaryColor !important;
+}
+
+.about-background {
+  @include fullScreen();
+
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size:contain ;  
+
+  .logo{
+    width:120px;
+  }
+}
