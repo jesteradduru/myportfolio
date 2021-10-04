@@ -12,9 +12,9 @@ const About = () => {
             <div className="d-flex justify-content-center align-items-center flex-column text-light">
                 <h3 className="text-center text-semibold">Hi I’m Jester Adduru, nice meeting you!</h3>
                 <p className="text-center w-50">I am a self taught web developer. I started loving coding
-    since i started to print “hello world” in html.
-    I became obsess in learning and practicing 
-    web development for the past years. </p>
+                since i started to print “hello world” in html.
+                I became obsess in learning and practicing 
+                web development for the past years. </p>
             </div>
 
             <Card className="w-75 mt-5 shadow py-5">
