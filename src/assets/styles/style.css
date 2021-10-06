@@ -19,14 +19,54 @@ body {
   color: #7538f1 !important;
 }
 
-.about-background {
+.about .about-background {
   height: 100vh;
-  background-image: url("../img/bg.png");
-  background-repeat: no-repeat;
+  background: url("../img/bg.png") no-repeat;
   background-size: contain;
+  width: 100%;
+  position: relative;
 }
 
-.about-background .logo {
+.about .logo {
   width: 120px;
+}
+
+.about .about-section {
+  position: absolute;
+}
+
+.btn-purple {
+  color: #7538f1 !important;
+  border-color: #7538f1 !important;
+}
+
+.btn-purple:hover {
+  color: #fff !important;
+  background-color: #7538f1 !important;
+}
+
+.footer {
+  background-color: #7538f1;
+  width: 100%;
+}
+
+.footer .logo img {
+  width: 50px;
+}
+
+.footer .text-light {
+  color: #cdb5ff !important;
+}
+
+@media only screen and (max-width: 1500px) {
+  .about-background {
+    width: 1500px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about-background {
+    width: 2800px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 $primaryColor: #7538f1;
+$primaryLightColor: #cdb5ff;
 
 @mixin fullScreen() {
   height:100vh;
@@ -26,14 +27,58 @@ body {
     color: $primaryColor !important;
 }
 
-.about-background {
-  @include fullScreen();
-
-  background-image: url("../img/bg.png");
-  background-repeat: no-repeat;
-  background-size:contain ;  
-
+.about{
+  .about-background {
+    @include fullScreen();
+    background: url("../img/bg.png") no-repeat;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+  }
   .logo{
     width:120px;
+  }
+
+  .about-section {
+    position: absolute;
+  }
+}
+
+.btn-purple {
+  color: $primaryColor !important;
+  border-color: $primaryColor !important;
+
+  &:hover{
+    color: #fff !important;
+    background-color:$primaryColor !important;
+  }
+
+  &:active{
+    
+  }
+}
+
+.footer {
+  background-color:$primaryColor;
+  width:100%;
+
+  .logo img {
+    width: 50px;
+  }
+
+  .text-light {
+    color: $primaryLightColor !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .about-background {
+    width: 1500px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about-background {
+    width: 2800px !important;
   }
 }

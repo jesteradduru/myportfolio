@@ -11,13 +11,13 @@ const Projects = () => {
                     <img src={sampImg} alt="sampImg" className="img-fluid d-block mx-auto mb-4" />
                     <h4 className="text-semibold mb-3">Robofriends</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidaa. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                    <Button outline color="primary" className="d-block mx-auto">View</Button>
+                    <Button outline color="info" className="d-block mx-auto btn-purple">View</Button>
                 </CardBody>
             </Card>
         </Col>
     )
     return (
-        <div>
+        <div className="d-block">
              <div className="d-flex justify-content-center align-items-center flex-column mb-5">
                 <h3 className="text-center text-semibold text-purple">My Startup Projects</h3>
                 <p className="text-center w-50">
