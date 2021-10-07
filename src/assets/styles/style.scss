@@ -3,10 +3,6 @@
 $primaryColor: #7538f1;
 $primaryLightColor: #cdb5ff;
 
-@mixin fullScreen() {
-  height:100vh;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -27,20 +23,29 @@ body {
     color: $primaryColor !important;
 }
 
+.btn {
+  border-radius: 15px !important;
+}
+
+.navbar {
+  .btn-outline-primary {
+    border-color: $primaryColor !important;
+    &:hover{
+      color: #fff !important;
+      background-color: $primaryColor;
+      border-color: $primaryColor !important;
+    }
+  }
+}
+
 .about{
-  .about-background {
-    @include fullScreen();
-    background: url("../img/bg.png") no-repeat;
-    background-size: contain;
+  .about-section {
+    background: url("../img/bg.png") no-repeat center top;
+    background-size: 2040px;
     width: 100%;
-    position: relative;
   }
   .logo{
     width:120px;
-  }
-
-  .about-section {
-    position: absolute;
   }
 }
 
@@ -51,10 +56,6 @@ body {
   &:hover{
     color: #fff !important;
     background-color:$primaryColor !important;
-  }
-
-  &:active{
-    
   }
 }
 
@@ -71,14 +72,10 @@ body {
   }
 }
 
-@media only screen and (max-width: 1500px) {
-  .about-background {
-    width: 1500px !important;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .about-background {
-    width: 2800px !important;
+@media only screen and (max-width: 766px){
+  .about {
+    .border-start {
+      border-left: 0px solid #fff !important;
+    }
   }
 }

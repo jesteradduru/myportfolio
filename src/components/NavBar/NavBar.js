@@ -32,7 +32,7 @@ const NavBar = (props) => {
               <NavLink href="#">Works</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Contacts</NavLink>
+              <NavLink className="btn btn-outline-primary" href="#">Message Me</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

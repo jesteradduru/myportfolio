@@ -9,7 +9,6 @@ import frontend from "../../assets/img/code.png"
 const About = () => {
     return (
         <div className="about mt-5 pt-5 d-flex  align-items-center flex-column">
-            <div className="about-background"></div>
             <div className="about-section">
                 <div className="d-flex justify-content-center align-items-center flex-column text-light pt-5">
                     <h3 className="text-center text-semibold">Hi I’m Jester Adduru, nice meeting you!</h3>

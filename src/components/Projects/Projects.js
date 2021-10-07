@@ -17,7 +17,7 @@ const Projects = () => {
         </Col>
     )
     return (
-        <div className="d-block">
+        <div className="mt-5">
              <div className="d-flex justify-content-center align-items-center flex-column mb-5">
                 <h3 className="text-center text-semibold text-purple">My Startup Projects</h3>
                 <p className="text-center w-50">

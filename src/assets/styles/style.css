@@ -19,20 +19,28 @@ body {
   color: #7538f1 !important;
 }
 
-.about .about-background {
-  height: 100vh;
-  background: url("../img/bg.png") no-repeat;
-  background-size: contain;
+.btn {
+  border-radius: 15px !important;
+}
+
+.navbar .btn-outline-primary {
+  border-color: #7538f1 !important;
+}
+
+.navbar .btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #7538f1;
+  border-color: #7538f1 !important;
+}
+
+.about .about-section {
+  background: url("../img/bg.png") no-repeat center top;
+  background-size: 2040px;
   width: 100%;
-  position: relative;
 }
 
 .about .logo {
   width: 120px;
-}
-
-.about .about-section {
-  position: absolute;
 }
 
 .btn-purple {
@@ -58,15 +66,9 @@ body {
   color: #cdb5ff !important;
 }
 
-@media only screen and (max-width: 1500px) {
-  .about-background {
-    width: 1500px !important;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .about-background {
-    width: 2800px !important;
+@media only screen and (max-width: 766px) {
+  .about .border-start {
+    border-left: 0px solid #fff !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
