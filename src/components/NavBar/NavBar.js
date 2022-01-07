@@ -10,7 +10,7 @@ import {
 } from 'reactstrap';
 import Logo from "../../assets/img/logo.png"
 
-const NavBar = (props) => {
+const NavBar = ({pageChange}) => {
   
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -26,13 +26,16 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
             <NavItem>
+              <NavLink href="#" onClick={pageChange} data-page="home">Home</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="#">About</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#">Works</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="btn btn-outline-primary" href="#">Message Me</NavLink>
+              <NavLink className="btn btn-outline-primary" href="#" onClick={pageChange} data-page="contact">Message Me</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

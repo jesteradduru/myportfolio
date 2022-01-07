@@ -72,6 +72,9 @@ body {
   }
 }
 
+.bg-purple{
+  background-color: $primaryColor;
+}
 @media only screen and (max-width: 766px){
   .about {
     .border-start {

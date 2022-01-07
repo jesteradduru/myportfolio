@@ -66,6 +66,10 @@ body {
   color: #cdb5ff !important;
 }
 
+.bg-purple {
+  background-color: #7538f1;
+}
+
 @media only screen and (max-width: 766px) {
   .about .border-start {
     border-left: 0px solid #fff !important;
